@@ -153,5 +153,5 @@ form button:hover {
     background-color: #7610A1;
 }
 p {
-    text shadow 1px 1px 3px rgba(0, 0, 0, 0.9);
+    text shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 } 
