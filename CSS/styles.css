@@ -86,8 +86,8 @@ h1.title {
 #main-content {
     padding: 20px;
     background-image: url('../assets/dancer_title.jpg'); /* Replace with the path to your image */
-    background-size: contain;
-    background-position: center top;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     color: #FFD700;
     position: relative;
