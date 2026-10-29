@@ -112,20 +112,31 @@
     </main>
 
     <footer id="footer">
-        <p>&copy; 2024 Erotic Elegance. All rights reserved.</p>
-        <nav>
-            <ul>
-                <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
-                <li><a href="#about" onclick="navigateTo('about')">About Us</a></li>
-                <li><a href="#shop" onclick="navigateTo('shop')">Shop</a></li>
-                <li><a href="#blog" onclick="navigateTo('blog')">Blog</a></li>
-                <li><a href="#contact" onclick="navigateTo('contact')">Contact Us</a></li>
-                <li><a href="#faq" onclick="navigateTo('faq')">FAQ</a></li>
-            </ul>
-        </nav>
-    </footer>
+<p>
+&copy; <span id="year"></span>
+Erotic Elegance. All rights reserved.
+</p>
+</footer>
 
-    <script>
+<script>
+function navigateTo(section) {
+document.querySelectorAll('.content-section')
+.forEach(section => section.style.display = 'none');
+
+document.getElementById(section).style.display = 'block';
+}
+
+window.onload = function() {
+navigateTo('home');
+
+// Automatically update the copyright year
+document.getElementById('year').textContent =
+new Date().getFullYear();
+};
+</script>
+
+</body>
+</html>
         function navigateTo(section) {
             document.querySelectorAll('.content-section').forEach(section => section.style.display = 'none');
             document.getElementById(section).style.display = 'block';
